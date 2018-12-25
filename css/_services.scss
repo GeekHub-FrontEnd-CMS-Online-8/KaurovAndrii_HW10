@@ -1,0 +1,107 @@
+/*services*/
+
+#services{
+	background: #b24a50;
+}
+#services-backgroung{
+	background: url(../img/bg-services.png);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.link-services--hover:hover{
+	background: #91778e;
+}
+.title{
+	text-align: center;
+	padding: 150px 0;
+	font-weight: $fwl;
+	&__title{
+		font-size: $fs*8;
+		margin: -10px 0;
+		text-transform: uppercase;
+	}
+	&__under-title{
+		font-size: $fs*2.5;
+		& span{
+			color: #d0767b;
+		}
+	}
+	&__text{
+		font-size: $fs+6;
+	}
+}
+.service{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-bottom: 50px;
+	&-card{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 24%;
+		background: #c45158;
+		padding: 20px;
+		border-radius: 10px;
+		&__round{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			background: #ffffff;
+			&--red{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				width: 115px;
+				height: 115px;
+				border: 5px solid #c45158;
+			}
+		}
+		&__title{
+			font-size: $fs*3.5;
+			text-transform: uppercase;
+			font-weight: $fwl;
+		}
+		&__text{
+			font-size: $fs+6;
+		}
+	}
+}
+
+/*services media*/
+@media screen and (max-width: 1200px){
+	.container{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.logo-menu{
+		flex-direction: column;
+		align-items: center;
+		&__menu{
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+	.service{
+		flex-wrap: wrap;
+		padding: 50px;
+		&-card{
+			width: 48%;
+			margin-top: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	.service-card{
+		width: 100%;
+	}
+}

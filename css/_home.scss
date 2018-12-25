@@ -1,0 +1,145 @@
+/*block home*/
+
+#home{
+	background: url(../img/bg-home.png);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.logo-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 30px;
+	&__menu{
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		&--link{
+			width: 20%;
+			text-decoration: none;
+			text-transform: capitalize;
+			color: #ffffff;
+			font-size: $fs+10;
+			padding: 60px 20px 15px 20px;
+			border-radius: 10px;
+			&:hover{
+				transition: 0.5s;
+				box-shadow: inset 0 0 5px #8076F0;
+			}
+		}
+	}
+}
+.link-home{
+	&--hover:hover{
+	background: #74c7d5;
+	}
+	&--active{
+		background: rgba(219,240,28,0.3);
+		padding: 60px 20px 15px 20px;
+		border-radius: 10px;
+		transition: 0.5s;
+	}
+}
+.container-home{
+	width: 95%;
+	margin: 0 auto;
+}
+.home-title{
+	padding: 350px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__header{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: rgba(237,240,238,0.5);
+		color: #74c7d5;
+		font-size: $fs*8;
+		border-radius: 5px;
+		padding: 0 30px;
+		&--text{
+			text-align: right;
+			width: 45%;
+			font-weight: $fwl;
+			line-height: 50px;
+			
+		}
+		&--head{
+			width: 45%;
+			font-weight: $fwb;
+		}
+	}
+	&__angel{
+		font-size: $fs*10;
+		color: rgba(237,240,238,0.5);
+	}
+}
+
+/*block home media*/
+
+@media screen and (max-width: 1200px){
+	.home-title{
+		&__header{
+			justify-content: space-between;
+			&--text{
+				width: 50%;
+			}
+			&--head{
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px){
+	.home-title__header{
+		width: 90%;
+		margin: 0 auto;
+		&--text{
+			width: 60%;
+		}
+		&--head{
+			width: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.logo-menu{
+		flex-direction: column;
+		align-items: center;
+		&__menu{
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	.logo-menu__menu{
+		flex-direction: column;
+		text-align: center;
+		&--link{
+			margin: 20px;
+		}
+	}
+	.home-title{
+		padding: 200px 0;
+		&__header{
+			flex-direction: column;
+			justify-content: center;
+			padding: 0 10px;
+			font-size: $fs*5;
+			&--text{
+				width: 100%;
+				text-align: center;
+			}
+			&--head{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}

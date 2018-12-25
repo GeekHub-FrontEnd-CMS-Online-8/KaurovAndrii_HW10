@@ -1,0 +1,35 @@
+$ffl: 'Lato', sans-serif;
+$fs: 8px;
+$fwb: 700;
+$fwl: 200;
+
+/*specification*/
+body{
+	margin: 0 auto;
+	padding: 0;
+	font-family: $ffl;
+	font-size: $fs*2;
+	color: #ffffff;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+div, img{
+	box-sizing: border-box;
+	display: block;
+}
+ul, li{
+	list-style-type: none;
+	display: block;
+	padding-left: 0;
+}
+h6{
+	margin-top: -10px;
+}
+
+@import 'home';
+@import 'services';
+@import 'about';
+@import 'work';
+@import 'contacts';
